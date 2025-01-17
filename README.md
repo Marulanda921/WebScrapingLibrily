@@ -17,7 +17,6 @@ Este script está diseñado para extraer información de productos desde la pág
   - Detalles adicionales
   - URLs de producto e imagen
 - Almacena los datos en una base de datos MySQL para su posterior análisis.
-- Maneja errores de forma robusta y omite entradas problemáticas sin detener el proceso.
 
 ---
 
@@ -64,27 +63,10 @@ Antes de ejecutar el script, asegúrate de cumplir con lo siguiente:
 
 ---
 
-## Uso
-
-1. **Ejecutar el Script**:
-   Ejecuta el script en un entorno Python:
-   ```bash
-   python scraper.py
-   ```
-
-2. **Resultados**:
-   - Los datos se almacenarán en la tabla `productos` de tu base de datos MySQL.
-
----
-
 ## Notas
 
 - El script utiliza `BeautifulSoup` para analizar el HTML y extraer datos.
 - Implementa un control básico de frecuencia con `time.sleep(0.5)` para evitar sobrecargar el servidor.
-- El manejo de errores asegura robustez registrando problemas y omitiendo entradas problemáticas.
 
 ---
 
-## Aviso Legal
-
-Este script es solo para fines educativos. Asegúrate de cumplir con los **Términos de Servicio de Buscalibre** y respeta su propiedad intelectual. Úsalo de forma responsable.
